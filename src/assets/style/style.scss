@@ -1,0 +1,31 @@
+
+/* 공통 scss 문서 */
+@import "/src/assets/style/main.scss"; 
+@import "/src/assets/style/header.scss";
+@import "/src/assets/style/footer.scss";
+
+/* 404 페이지 scss */
+
+@import "/src/assets/style/wrongUrl.scss"; 
+
+
+/* 각 페이지 문서 */
+
+@import "/src/assets/style/productList.scss/"; /* 프로덕트리스트 scss */
+@import "/src/assets/style/productDetail.scss/"; /* 프로덕트디테일 scss */
+@import "/src/assets/style/cart.scss/"; /* 장바구니 scss */
+@import "/src/assets/style/payment.scss/";/* 결제 scss */
+@import "/src/assets/style/contact.scss/"; // 문의사항
+@import "/src/assets/style/faq.scss/"; // faq
+@import "/src/assets/style/notice.scss/"; // 공지사항
+@import "/src/assets/style/mypage.scss/"; // 마이페이지
+
+
+
+
+// 반응형 scss
+
+@import "/src/assets/style/responsive_mobile.scss"; // max-width 700
+@import "/src/assets/style/responsive_tablet.scss"; // max-width 1200
+
+

@@ -1,0 +1,332 @@
+html {
+    font-size: 16px;
+}
+
+$mainColor : #e87722;
+$white : #fff;
+$black: #222;
+
+$textGray: #8F8F8F;
+$deepGray: #ACB2B9;
+$middleGray : #ACB2B9;
+$lightGray : #f8f8f8;
+$stroke : #D9D9D9;
+
+$homeViewTitle: 2rem;
+$productListTitle: 1rem;
+$productListPrice: 1.25rem;
+$productListPercent: 0.9rem;
+$productBrandName: 0.9rem;
+$categoryBestTabs: 0.9rem;
+$brandListName: 0.8rem;
+$allMenuBtn: 1.25rem;
+$subMenuBtn: 0.8rem;
+$tabsMenuBtn : 0.95rem;
+
+// 폰트
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope", sans-serif;
+    src: url("./../font/manrope/Manrope-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Poppins */
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins, sans-serif";
+    src: url("./../font/poppins/Poppins-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+$font-family: ('body': "'Pretendard', sans-serif",
+    'heading': "'Pretendard', sans-serif",
+    'p': "'Pretendard', sans-serif",
+    'jost': "'Pretendard', sans-serif",
+    'fontawesome': '"Font Awesome 6 Pro"',
+);
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// 공통 app 
+#app {
+    font-family: "Pretendard-Regular";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #222;
+}
+
+.padding-tb-100 {
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+}
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+
+.mb-24 {
+    margin-bottom: 1.5rem;
+}
+
+.mopage {
+    display: none;
+}
+
+.webpage {
+    display: block;
+}
+
+nav {
+    padding: 1.875rem;
+}
+
+nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+    color: #e37226;
+}
+
+.section-breadcrumb {
+    .cr-breadcrumb-title {
+        p {
+            display: flex;
+        }
+    }
+}
+
+.ssm-button {
+    height: 2.5rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.2;
+    background-color: #E37226;
+    color: #fff;
+    border: 1px solid #E37226;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.ssm-button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+// 공통 브레드크럼스
+
+.section-breadcrumb {
+    margin: 20px 0;
+    position: relative;
+    padding-top: 0;
+
+    .ssm-breadcrumb-image {
+            width: 100%;
+            z-index: 0;
+            position: relative;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+                height: 40px;
+
+                .ssm-breadcrumb-title {
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        align-items: flex-start !important;
+                    flex-direction: column-reverse;
+
+                    p {
+                            margin-bottom: 0;
+                            align-items: center;
+                            font-size: 12px;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            padding: 5px;
+
+                         a {
+                            &:first-child {
+                                color: $mainColor;
+                            }
+                         
+                            
+                         }
+                            i {
+                                margin: 0 5px;
+                            }
+                    }
+                }
+    }
+}
+
+#outAlert,
+#passwordAlert,
+#infoAlert {
+    .modal-content {
+        max-width: 360px;
+        text-align: center;
+    }
+
+    img {
+        height: rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        margin-bottom: 0;
+        font-weight: 500;
+        padding: 3.125rem 0;
+    }
+
+    .modal-footer {
+        button {
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .mopage {
+        display: block !important;
+    }
+
+    .webpage {
+        display: none !important;
+    }
+
+     .scrollUpBtn {
+         display: none !important;
+     }
+     .bakery {
+         width: 100% !important;
+     }
+}

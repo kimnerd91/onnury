@@ -1,0 +1,266 @@
+.section-faq {
+    nav {
+        padding: 1.9rem 0;
+        padding-left: 0 !important;
+    }
+
+    .faqBox {
+        margin-bottom: 1.55rem;
+
+        .nav-tabs {
+            border-bottom: none !important;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                width: 11.5%;
+                border-radius: 0.625rem;
+                margin-bottom: 0px;
+
+                .active {
+                    background-color: $mainColor !important;
+                    border-color: $mainColor;
+                    transition: all 0.5s;
+
+                    div {
+
+
+                        i,
+                        p {
+                            color: $white !important;
+
+                        }
+                    }
+
+
+                }
+
+                button {
+                    width: 90%;
+                    padding: 0px 0;
+
+                    background-color: $white;
+                    border: 1px solid $stroke !important;
+                    box-shadow: 1px;
+                    border-radius: 0.625rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-bottom: 0px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+
+
+
+
+                    &:hover {
+                        background-color: #e87722;
+                        border-color: #e87722;
+
+                        i,
+                        p {
+                            color: #fff;
+
+                        }
+                    }
+
+
+                    i {
+                        font-size: 3rem;
+                        padding-top: 1.25rem;
+                        transition: all 0.5s;
+                        color: #e87722;
+                        display: none;
+                    }
+
+                    p {
+                        margin-top: 0px;
+                        margin-bottom: 0;
+                        transition: all 0.5s;
+                        padding: 0.625rem;
+                        color: $textGray;
+                        font-weight: bold;
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .gongji {
+
+        thead {
+            tr {
+                th {
+                    text-align: center;
+
+
+                    &:nth-child(2) {
+                        width: 70%;
+                    }
+
+                    &:last-child {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+
+
+                    &:nth-child(2) {
+                        width: 70%;
+                    }
+
+                    &:last-child {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+
+    #gng {
+        .modal-content {
+            max-width: 350px;
+            min-height: 400px;
+        }
+    }
+}
+
+.ssm-faq {
+    .accordion {
+        .accordion-item {
+            .accordion-button {
+                padding: 0.94rem 1.875rem
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    padding-left: 2rem !important;
+
+                    ul {
+                        padding-left: 2rem !important;
+                    }
+
+                    li {
+                        list-style: unset !important;
+                    }
+
+                    p {
+                        font-size: 0.75rem;
+                        word-break: keep-all;
+                        white-space: break-spaces;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .ql-align-center {
+                        text-align: center !important;
+                    }
+
+                    .ql-align-right {
+                        text-align: right !important;
+                    }
+
+                    .ql-align-left {
+                        text-align: left !important;
+                    }
+
+                    .ql-align-justify {
+                        text-align: justify !important;
+                    }
+
+                    .ql-size-huge {
+                        font-size: x-large !important;
+                    }
+
+                    .ql-size-large {
+                        font-size: large !important;
+                    }
+
+                    .ql-size-small {
+                        font-size: small !important;
+                    }
+
+                    // Indentation classes
+                    @for $i from 1 through 9 {
+                        .ql-indent-#{$i} {
+                            text-indent: #{$i}rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #faq .accordion .accordion-item .accordion-collapse .accordion-body p {
+        white-space: normal !important;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .faqBox {
+        margin-bottom: 1.25rem;
+
+        ul {
+            li {
+                button {
+                    padding: 0;
+
+                    i {
+                        font-size: 1.875rem;
+                        padding-top: 1.25rem;
+                    }
+
+                    p {
+                        padding-bottom: 0.94rem;
+                    }
+                }
+            }
+        }
+    }
+
+      .gongji thead tr th:nth-child(2) {
+          width: 50%;
+      }
+
+      .faq {
+          >div:last-child {
+              width: 100%;
+          }
+
+          .faqBox {
+              ul {
+                  justify-content: center;
+              }
+
+              li {
+                  width: 31.5%!important;
+
+                  button {
+                      width: 100%;
+                  }
+              }
+          }
+      }
+
+      .ssm-faq .accordion .accordion-item .accordion-button {
+          font-size: 0.875rem;
+      }
+
+      .ssm-faq .accordion .accordion-item .accordion-collapse .accordion-body p {
+          word-wrap: break-word;
+      }
+
+
+}

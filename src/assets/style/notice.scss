@@ -1,0 +1,59 @@
+.noticePage {
+    .noticeTitle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        padding: 1.875rem 3.125rem 60px 3.125rem;
+        border-bottom: 1px solid #ddd;
+
+        h2 {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 3.25rem;
+            color: #222;
+            margin: 1.875rem 0 2.5rem;
+            text-align: center;
+        }
+
+        span {
+            font-size: 1rem;
+            color: #888;
+            line-height: 1.625rem;
+            text-align: center;
+        }
+    }
+
+    .noticeText {
+        padding: 1.875rem 20%;
+
+        img {
+            width: 100%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.75rem;
+            color: #444;
+        }
+    }
+
+    .noticeBack {
+        text-align: center;
+        padding: 20px 20%;
+
+        button {
+            width: 50%;
+            padding: 0.625rem 0;
+            background-color: transparent;
+            border: 1px solid #ddd;
+            color: #999;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: #e87722;
+                color: #fff;
+            }
+        }
+    }
+}

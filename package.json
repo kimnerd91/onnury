@@ -1,0 +1,37 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 8889",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@vuepic/vue-datepicker": "^8.7.0",
+    "aos": "^2.3.4",
+    "axios": "^1.7.2",
+    "core-js": "^3.8.3",
+    "cors": "^2.8.5",
+    "jquery": "^3.7.1",
+    "swiper": "^11.1.4",
+    "vue": "^3.4.29",
+    "vue-cookies": "^1.8.4",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "node-sass": "^9.0.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "vite": "^5.3.1"
+  }
+}
